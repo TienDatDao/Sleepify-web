@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="vi">
 
+<style>
+  /* Ẩn bất kỳ phần tử nào do Netlify tự động chèn vào */
+  #netlify-badge,
+  [id*="netlify"],
+  [class*="netlify-badge"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+</style>
+
+<script>
+  // Dùng JavaScript để tự động tìm và xóa nút Netlify nếu nó cố tình hiện lên
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const removeNetlifyBadge = () => {
+      // Tìm các thẻ có chứa chữ hoặc liên kết đến Netlify ở góc màn hình
+      const elements = document.querySelectorAll('a, div');
+      elements.forEach(el => {
+        if (el.innerText && el.innerText.includes('Powered by Netlify')) {
+          el.remove();
+        }
+      });
+    };
+
+    removeNetlifyBadge();
+    // Chạy lại sau 1 giây để đảm bảo bắt được khi trang load xong
+    setTimeout(removeNetlifyBadge, 1000);
+  });
+</script>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
