@@ -10,29 +10,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="sleepify.css?v=product-photo">
+  <link rel="stylesheet" href="sleepify.css?v=mobile-product-video">
 </head>
 <body>
   <a class="skip-link" href="#thiet-bi">Đến nội dung chính</a>
   <main id="top">
     <!-- HERO -->
     <div class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="wrap hero-copy">
-        <h1 class="hero-brand"><span class="logo logo-xl" aria-hidden="true"></span><span class="wordmark"
-           >Sleepify</span></h1>
-        <p class="slogan">Chẩn đoán chuyên sâu, thoải mái tại nhà.</p>
-        <p class="tagline">Phát hiện sớm <em class="hl">rối loạn hô hấp</em> và <em
-            class="hl">chứng ngưng thở</em> khi ngủ.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#thiet-bi">Xem bộ thiết bị</a>
-          <a class="btn btn-ghost" href="#lien-he">Liên hệ</a>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-brand"><span class="logo logo-xl" aria-hidden="true"></span><span class="wordmark"
+             >Sleepify</span></h1>
+          <p class="slogan"><span>Chẩn đoán chuyên sâu,</span> <span>thoải mái tại nhà.</span></p>
+          <p class="tagline">Phát hiện sớm <em class="hl">rối loạn hô hấp</em> và <em
+              class="hl">chứng ngưng thở</em> khi ngủ.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#thiet-bi">Xem bộ thiết bị</a>
+            <a class="btn btn-ghost" href="#lien-he">Liên hệ</a>
+          </div>
+          <ul class="hero-points" aria-label="Đặc điểm của Sleepify">
+            <li>Đo tại nhà</li>
+            <li>Không dây</li>
+            <li>Nhiều đêm</li>
+          </ul>
         </div>
+        <figure class="hero-photo">
+          <img src="assets/sleepify-product-refined.webp?v=transparent" width="1186" height="1327" fetchpriority="high" decoding="async"
+            alt="Bộ thiết bị Sleepify với hai hộp màu xám và một mô-đun nhỏ đặt trên đế trắng">
+          <figcaption>Bộ thiết bị Sleepify.</figcaption>
+        </figure>
+      </div>
+      <div class="wrap hero-next">
+        <a href="#bao-cao">Khám phá Sleepify <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6" /></svg></a>
       </div>
     </div>
 
-<nav class="section-nav" aria-label="Các nội dung trên trang">
-      <div class="wrap"><a href="#bao-cao">Báo cáo minh họa</a><a href="#thiet-bi">Bộ thiết bị</a><a href="#so-sanh">So sánh cách đo</a><a href="#lien-he">Liên hệ</a></div>
+    <nav class="section-nav" aria-label="Các nội dung trên trang">
+      <div class="wrap">
+        <details class="section-menu">
+          <summary>Nội dung trên trang</summary>
+          <div class="section-links"><a href="#bao-cao">Báo cáo minh họa</a><a href="#thiet-bi">Bộ thiết bị</a><a href="#so-sanh">So sánh cách đo</a><a href="#lien-he">Liên hệ</a></div>
+        </details>
+      </div>
     </nav>
 
     <section id="bao-cao" aria-labelledby="report-heading">
@@ -84,21 +103,26 @@
     </section>
 
     <!-- DEVICES -->
-    <section id="thiet-bi">
-      <div class="wrap">
-        <div class="sec-head">
-          <h2>Hệ thống <em class="hl">nhỏ gọn</em>, <em class="hl">hoàn toàn không dây</em>.</h2>
-          <p class="lead">Đeo gọn nhẹ, ngủ thoải mái như mọi đêm.</p>
+    <section id="thiet-bi" aria-labelledby="devices-heading">
+      <figure class="product-video">
+        <video autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback
+          width="1920" height="1080" poster="assets/sleepify-product-video-poster.jpg"
+          aria-label="Video giới thiệu bộ thiết bị Sleepify" aria-describedby="product-video-caption">
+          <source src="assets/sleepify-product-loop-60.mp4" type="video/mp4">
+          <a href="assets/sleepify-product-loop-60.mp4">Xem video bộ thiết bị Sleepify.</a>
+        </video>
+        <div class="product-video-copy">
+          <div class="wrap">
+            <div class="sec-head">
+              <h2 id="devices-heading">Hệ thống <em class="hl">nhỏ gọn</em>, <em class="hl">hoàn toàn không dây</em>.</h2>
+              <p class="lead">Đeo gọn nhẹ, ngủ thoải mái như mọi đêm.</p>
+            </div>
+          </div>
         </div>
+        <figcaption id="product-video-caption" class="visually-hidden">Bộ thiết bị Sleepify.</figcaption>
+      </figure>
 
-        <figure class="photo product-photo">
-          <img
-            src="assets/sleepify-product-refined.webp" loading="lazy" decoding="async"
-            width="1186" height="1327"
-            alt="Bộ thiết bị Sleepify với hai hộp màu xám và một mô-đun nhỏ đặt trên đế trắng">
-          <figcaption>Bộ thiết bị Sleepify.</figcaption>
-        </figure>
-
+      <div class="wrap">
         <div class="devices-grid">
           <div class="body-fig" id="bodyFig">
             <svg viewBox="0 0 320 440" role="img"
@@ -279,61 +303,40 @@
     </section>
 
     <!-- AUDIENCE -->
-    <section id="danh-cho" class="alt">
+    <section id="danh-cho" class="alt" aria-labelledby="audience-heading">
       <div class="wrap">
         <div class="sec-head">
-          <h2><em class="hl">Sleepify</em> dành cho ai?</h2>
+          <h2 id="audience-heading"><em class="hl">Sleepify</em> dành cho ai?</h2>
         </div>
         <div class="aud">
-          <article>
-            <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
-                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M32 18a12 12 0 1 0 8 20 10 10 0 0 1-8-20z" />
-                <path d="M8 8h9l-9 10h9" />
-                <path d="M21 6h6l-6 7h6" />
-              </svg></div>
-            <h3>Người có dấu hiệu ngưng thở</h3>
-            <p>Người được bác sĩ chẩn đoán hoặc có triệu chứng như ngáy to, ngủ không sâu, mệt và buồn ngủ ban ngày.</p>
-          </article>
-          <article>
-            <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
-                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="24" cy="24" r="16" />
-                <path d="M16 25l6 6 11-13" />
-              </svg></div>
-            <h3>Người cần theo dõi sau điều trị</h3>
-            <p>Xem việc giảm cân, dùng CPAP hay phẫu thuật có hiệu quả không.</p>
-          </article>
-          <article>
-            <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
-                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 22 24 8l17 14v18a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z" />
-                <path d="M24 24v12M18 30h12" />
-              </svg></div>
-            <h3>Phòng khám và bệnh viện</h3>
-            <p>Giảm tải cơ sở hạ tầng: bệnh nhân đo tại nhà, không chiếm phòng đo và giường bệnh.</p>
-          </article>
-          <article>
-            <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
-                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="17" cy="16" r="6" />
-                <path d="M6 38c0-8 5-12 11-12s11 4 11 12" />
-                <circle cx="35" cy="22" r="4.5" />
-                <path d="M28 38c0-6 3-9 7-9s7 3 7 9" />
-              </svg></div>
-            <h3>Gia đình có người cao tuổi</h3>
-            <p>Theo dõi hô hấp ban đêm tại nhà, gửi báo cáo cho bác sĩ.</p>
-          </article>
-          <article>
-            <div class="ico" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor"
-                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="24" cy="24" r="17" />
-                <circle cx="24" cy="24" r="5" />
-                <path d="M7.5 22h11.5M29 22h11.5M24 29v12" />
-              </svg></div>
-            <h3>Nghề cần tỉnh táo</h3>
-            <p>Tài xế, người làm ca đêm có thể sàng lọc sớm để tránh ngủ gật.</p>
-          </article>
+          <div class="aud-personal" role="group" aria-labelledby="aud-personal-heading">
+            <h3 id="aud-personal-heading">Cá nhân &amp; gia đình</h3>
+            <article class="aud-primary">
+              <h4>Người có dấu hiệu ngưng thở</h4>
+              <p>Người được bác sĩ chẩn đoán hoặc có triệu chứng như ngáy to, ngủ không sâu, mệt và buồn ngủ ban ngày.</p>
+            </article>
+            <div class="aud-secondary">
+              <article>
+                <h4>Người cần theo dõi sau điều trị</h4>
+                <p>Xem việc giảm cân, dùng CPAP hay phẫu thuật có hiệu quả không.</p>
+              </article>
+              <article>
+                <h4>Gia đình có người cao tuổi</h4>
+                <p>Theo dõi hô hấp ban đêm tại nhà, gửi báo cáo cho bác sĩ.</p>
+              </article>
+              <article>
+                <h4>Nghề cần tỉnh táo</h4>
+                <p>Tài xế, người làm ca đêm có thể sàng lọc sớm để tránh ngủ gật.</p>
+              </article>
+            </div>
+          </div>
+          <div class="aud-clinical" role="group" aria-labelledby="aud-clinical-heading">
+            <h3 id="aud-clinical-heading">Cơ sở y tế</h3>
+            <article>
+              <h4>Phòng khám và bệnh viện</h4>
+              <p>Giảm tải cơ sở hạ tầng: bệnh nhân đo tại nhà, không chiếm phòng đo và giường bệnh.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -357,44 +360,51 @@
         </div>
         <div class="tablewrap">
           <table class="cmp" role="table">
+            <caption class="visually-hidden">So sánh đồng hồ thông minh, đo ở bệnh viện và Sleepify</caption>
+            <colgroup>
+              <col class="cmp-criterion">
+              <col class="cmp-alternative">
+              <col class="cmp-alternative">
+              <col class="cmp-sleepify">
+            </colgroup>
             <thead role="rowgroup">
               <tr role="row">
                 <th role="columnheader" scope="col">Tiêu chí</th>
-                <th role="columnheader" scope="col">Đồng hồ thông minh</th>
-                <th role="columnheader" scope="col">Đo ở bệnh viện</th>
+                <th role="columnheader" scope="col"><span class="cmp-heading-line">Đồng hồ</span> <span class="cmp-heading-line">thông minh</span></th>
+                <th role="columnheader" scope="col"><span class="cmp-heading-line">Đo ở</span> <span class="cmp-heading-line">bệnh viện</span></th>
                 <th role="columnheader" scope="col" class="us">Sleepify</th>
               </tr>
             </thead>
             <tbody role="rowgroup">
               <tr role="row">
                 <th role="rowheader" scope="row">Tín hiệu hô hấp</th>
-                <td role="cell" data-label="Đồng hồ">Gián tiếp</td>
-                <td role="cell" data-label="PSG">Đầy đủ</td>
-                <td role="cell" class="us" data-label="Sleepify">Vừa đủ các chỉ số lâm sàng phục vụ chẩn đoán</td>
+                <td role="cell">Gián tiếp</td>
+                <td role="cell">Đầy đủ</td>
+                <td role="cell" class="us">Vừa đủ các chỉ số lâm sàng phục vụ chẩn đoán</td>
               </tr>
               <tr role="row">
                 <th role="rowheader" scope="row">Nơi đo</th>
-                <td role="cell" data-label="Đồng hồ">Tại nhà</td>
-                <td role="cell" data-label="PSG">Ở bệnh viện, ngủ lại qua đêm</td>
-                <td role="cell" class="us" data-label="Sleepify">Tại nhà, không dây</td>
+                <td role="cell">Tại nhà</td>
+                <td role="cell">Ở bệnh viện, ngủ lại qua đêm</td>
+                <td role="cell" class="us">Tại nhà, không dây</td>
               </tr>
               <tr role="row">
                 <th role="rowheader" scope="row">Thời gian theo dõi</th>
-                <td role="cell" data-label="Đồng hồ">Dài hạn, chỉ ước lượng</td>
-                <td role="cell" data-label="PSG">Thường một đêm</td>
-                <td role="cell" class="us" data-label="Sleepify">Nhiều đêm</td>
+                <td role="cell">Dài hạn, chỉ ước lượng</td>
+                <td role="cell">Thường một đêm</td>
+                <td role="cell" class="us">Nhiều đêm</td>
               </tr>
               <tr role="row">
                 <th role="rowheader" scope="row">Phân tích bằng AI</th>
-                <td role="cell" data-label="Đồng hồ">Không nhắm vào hô hấp</td>
-                <td role="cell" data-label="PSG">Bác sĩ đọc kết quả</td>
-                <td role="cell" class="us" data-label="Sleepify">Có, học theo từng người</td>
+                <td role="cell">Không nhắm vào hô hấp</td>
+                <td role="cell">Bác sĩ đọc kết quả</td>
+                <td role="cell" class="us">Có, học theo từng người</td>
               </tr>
               <tr role="row">
                 <th role="rowheader" scope="row">Chi phí</th>
-                <td role="cell" data-label="Đồng hồ">Thấp đến trung bình</td>
-                <td role="cell" data-label="PSG">Cao</td>
-                <td role="cell" class="us" data-label="Sleepify">Hợp lý</td>
+                <td role="cell">Thấp đến trung bình</td>
+                <td role="cell">Cao</td>
+                <td role="cell" class="us">Hợp lý</td>
               </tr>
             </tbody>
           </table>
