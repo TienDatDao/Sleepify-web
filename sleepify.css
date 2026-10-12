@@ -177,7 +177,8 @@ summary:hover { text-decoration: underline; text-underline-offset: .2em; }
 .cmp thead th { background: var(--surface2); font-family: var(--font-head); font-size: 1.1rem; line-height: 1.4; }
 .cmp tbody th { font-weight: 600; }
 .cmp td { color: var(--muted); }
-.cmp .us { background: var(--bg2); color: var(--ink); }
+.cmp .us { background: var(--bg2); color: var(--accent-dark); }
+.cmp td.us { font-size: calc(1em + 1px); font-weight: 500; }
 .cmp thead .us { background: var(--accent); color: #fff; }
 .cmp tbody tr:last-child > * { border-bottom: 0; }
 .comparison-note { margin-top: 20px; color: var(--muted); font-size: 1rem; max-width: 75ch; }
@@ -240,7 +241,7 @@ footer p { max-width: 75ch; }
   .cmp thead th:first-child { text-align: left; }
   .cmp tbody th { background: var(--surface2); font-size: .95em; line-height: 1.45; }
   .cmp td { color: var(--ink); }
-  .cmp td.us { font-weight: 500; border-left-color: var(--line); }
+  .cmp td.us { border-left-color: var(--line); }
 }
 
 @media (max-width: 600px) {
